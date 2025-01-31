@@ -1,5 +1,7 @@
 body {
     background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
   }
   
   h2 {
@@ -11,6 +13,7 @@ body {
   p {
     font-family: verdana;
     font-size: 20px;
+    height: auto;
   }
   
   li {
@@ -25,7 +28,7 @@ body {
   /* Style inputs with type="text", select elements and textareas */
   input[type=text], select, textarea {
     width: 100%; /* Full width */
-    padding: 20px; /* Some padding */ 
+    padding: 10px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -43,7 +46,7 @@ body {
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: 0.1s;
   }
   
@@ -51,41 +54,53 @@ body {
   .btn:hover {
     background-color: #3E8E41;
     color:lawngreen;
-    opacity: 1;
+    opacity: 2;
   }
   
   /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
   }
   
 
   
 
-  * {
-    box-sizing: border-box;
-  }
-  
   /* Create two equal columns that floats next to each other */
   .column {
     flex: 50%;
     padding: 10px;
     height: 200px; /* Should be removed. Only for demonstration */
+    background-color:#bbb;
   }
   
   
 .row {
    
     display: flex;
+    padding: auto;
+    
+
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .column {
     width: 100%;
+    
   }
 }
 
+@media screen and (max-width: 800px) {
+  .column {
+      flex-direction: column;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
