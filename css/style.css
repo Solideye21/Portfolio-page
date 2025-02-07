@@ -194,6 +194,7 @@ div {
 }
 
 .section-intro h5 {
+  font-family: sans-serif;
   color: #FF0077;
 	font-size: 1.6rem;
   text-align: center;
@@ -477,6 +478,14 @@ div {
 	bottom: 0;
 }
 
+#portfolio .section-intro {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 3.6rem;
+  position: relative;
+}
 
 .grid-row {
   margin: 20rem;
@@ -507,6 +516,15 @@ div {
   padding-top: 5rem;
   padding-bottom: 3rem;
 
+}
+
+#contact .section-intro {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 3.6rem;
+  position: relative;
 }
 
 #contact .section-intro h1 {
