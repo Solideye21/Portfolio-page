@@ -642,11 +642,11 @@ select {
 	font-size: 1.5rem;
 	display: block;
 	letter-spacing: .2rem;
-	height: 6.6rem;
+	height: 5.6rem;
 	line-height: 6.6rem;
-	padding: 0 3rem;
+	padding: 0 2rem;
 	margin-top: 4.8rem;
-	width: 100%;
+	width: 80%;
 	background: #FF0077;
 	color: #FFFFFF;
   text-transform: uppercase;
