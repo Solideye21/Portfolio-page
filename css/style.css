@@ -1,106 +1,691 @@
+html {
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
-    background-color: lightblue;
-    padding: 10px;
-    margin: 5px;
-  }
-  
-  h2 {
-    color: black;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-    height: auto;
-  }
-  
-  li {
-    font-family: verdana;
-  }
-  
-  
-  img {
-    border-radius: 10px;
-  }
-  
-  /* Style inputs with type="text", select elements and textareas */
-  input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 10px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  .btn {
-    background-color: #3E8E41;
-    border: none;
-    color:black;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.8;
-    transition: 0.1s;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  .btn:hover {
-    background-color: #3E8E41;
-    color:lawngreen;
-    opacity: 2;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin: 10px;
-  }
-  
+  font-family: serif;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: #6e6e6e;
+  margin: 0;
+}
+h3,h4 {
+  font-family: sans-serif;
+color: #111111;
+}
 
-  
+div {
+  display: block;
+  unicode-bidi: isolate;
+  margin: 0;
+  padding: 0;
+}
 
-  /* Create two equal columns that floats next to each other */
-  .column {
-    flex: 50%;
-    padding: 10px;
-    height: 200px; /* Should be removed. Only for demonstration */
-    background-color:#bbb;
-  }
-  
-  
 .row {
-   
-    display: flex;
-    padding: auto;
-    
-
-    
+	width: 94%;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
-@media (max-width: 800px) {
-  .column {
+
+#splash-intro {
+  background: url(/images/pexels-felixmittermeier-956999.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size:cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
+  display: table;
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+}
+
+#splash-intro::before{
+    content: "";
+    position: absolute;
+    top: 0;
     width: 100%;
-    
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .column {
-      flex-direction: column;
-  }
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 
-* {
-  box-sizing: border-box;
-  margin: auto;
+.btn {
+  color: #FFFFFF !important;
+  border: 2px solid #313131;
+  border-color: rgba(255, 255, 255, 0.3);
+  padding: 0 3.5rem 0 3rem !important;
+  text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 4px 2px;
+    cursor: pointer;
+   background: transparent !important;
+
+
 }
+
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-youtube {
+  background: #444040;
+  color: white;
+}
+.fa-instagram {
+  background: #444040;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #444040;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.intro-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-transform: translateY(-2.1rem);
+	-ms-transform: translateY(-2.1rem);
+	transform: translateY(-2.1rem);
+}
+
+.intro-content h1 {
+	color: #FFFFFF;
+	font-family: sans-serif;
+  font:bold;
+	font-size: 8.4rem;
+	line-height: 1.071;
+	max-width: 900px;
+	margin-top: 0;
+	margin-bottom: .6rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.intro-content h5 {
+	color: #cc005f;
+	font-family:sans-serif;
+	font-size: 1.3rem;
+	line-height: 1.565;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.center {
+  position: absolute;
+  top: 95%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.intro-content .intro-position {
+	font-family: serif;
+	font-size: .9rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.intro-content .intro-position span {
+	display: inline-block;
+}
+
+.intro-content .intro-position span::after {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 8px 0 14px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.intro-content .intro-position span:first-child::before {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 14px 0 8px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.col {
+  width: 100%;
+}
+#about {
+	background: #FFFFFF;
+	padding-top: 1rem;
+	padding-bottom: 10rem;
+}
+
+#about .section-intro {
+  max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	margin-bottom: 3.6rem;
+	position: relative;
+}
+
+.section-intro h5 {
+  color: #FF0077;
+	font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: .4rem;
+}
+
+.section-intro h1 {
+  font-family: sans-serif;
+  font-size: 2.6rem;
+  color: #313131;
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.intro-info {
+	margin-top: 4.2rem;
+	margin-right: -30px;
+	margin-left: -30px;
+}
+
+.intro-info img {
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  margin: .9rem 0 0 0;
+  float:left;
+}
+
+.intro-info .lead {
+	text-align: left;
+	padding-left: 13rem;
+}
+
+.about-content {
+  display: flex;
+  position: relative;
+  text-align: left;
+  max-width: 950px;
+  margin-bottom: 1.6rem;
+}
+
+.about-content h3 {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #111111;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 80px 200px;
+  gap: 10px;
+  padding: 10x;
+}
+
+#grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 30px 0 ;
+  font-size: 30px;
+}
+.col-six {
+  width: 50%;
+}
+
+.col-six p {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  text-align: left;
+  ;line-height: 1.4;
+}
+
+.about-content .info-list {
+	list-style: none;
+	margin-left: 0;
+}
+.about-content .info-list li {
+	padding: 0 0 0rem 0;
+	margin-bottom: .6rem;
+}
+.about-content .info-list li strong {
+	font-family: sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1.0rem;
+
+}
+.about-content .info-list li span {
+	display: block;
+	font-family: sans-serif;
+	color: #888888;
+	font-size: 1.0rem;
+	line-height: 0.2rem;
+}
+
+.skill-bars {
+	list-style: none;
+	margin: 6rem 0 3rem;
+  font-size: 1.0rem;
+  
+
+}
+.skill-bars li {
+	height: 0.6rem;
+	background: #a1a1a1;
+	width: 100%;
+	margin-bottom: 3rem;
+	padding: 0 0 0rem 0;
+	position: relative;
+  font-size: 1.0rem;
+  
+
+}
+.skill-bars li strong {
+	position: absolute;
+	left: 0;
+	top: -2rem;
+	font-family: sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1.0rem;
+  
+
+}
+.skill-bars li .progress {
+	background: #313131;
+	position: relative;
+	height: 100%;
+  font-size: 1.0rem;
+  
+
+}
+
+
+.skill-bars li .percent5   { width: 5%; }
+.skill-bars li .percent10  { width: 10%; }
+.skill-bars li .percent15  { width: 15%; }
+.skill-bars li .percent20  { width: 20%; }
+.skill-bars li .percent25  { width: 25%; }
+.skill-bars li .percent30  { width: 30%; }
+.skill-bars li .percent35  { width: 35%; }
+.skill-bars li .percent40  { width: 40%; }
+.skill-bars li .percent45  { width: 45%; }
+.skill-bars li .percent50  { width: 50%; }
+.skill-bars li .percent55  { width: 55%; }
+.skill-bars li .percent60  { width: 60%; }
+.skill-bars li .percent65  { width: 65%; }
+.skill-bars li .percent70  { width: 70%; }
+.skill-bars li .percent75  { width: 75%; }
+.skill-bars li .percent80  { width: 80%; }
+.skill-bars li .percent85  { width: 85%; }
+.skill-bars li .percent90  { width: 90%; }
+.skill-bars li .percent95  { width: 95%; }
+.skill-bars li .percent100 { width: 100%; }
+
+.grey-section {
+  background-color:#ebebeb;
+}
+
+.grey-section p.lead {
+  color: #7d7d7d;
+}
+
+
+
+.col-twelve h5 {
+  font-family: sans-serif;
+  
+}
+
+#resume {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+#resume .section-intro {
+  max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	margin-bottom: 3.6rem;
+	position: relative;
+}
+
+
+#resume .resume-header h2{
+  font-family: sans-serif;
+  margin-top: 10rem;
+  
+  color: #FF0077;
+	text-align: center;
+}
+
+
+#resume .resume-timeline {
+	max-width: 980px;
+}
+#resume .timeline-wrap {
+	position: relative;
+	margin-top: 1.3rem;
+	margin-bottom: 6rem;
+}
+#resume .timeline-wrap::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 38%;
+	top: 0;
+}
+#resume .timeline-block {
+  width: 95%;
+	position: relative;
+	padding-top: .7rem;
+}
+#resume .timeline-ico {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: #313131;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	left: 40%;
+  top: 2rem;
+	margin-left: -2.5rem;
+}
+#resume .timeline-ico i {
+	position: relative;
+	left: -0.1rem;
+	top: .1rem;
+}
+
+#resume .timeline-header {
+	float: left;
+	width: 35%;
+	padding-right: 90px;
+	text-align: right;
+}
+#resume .timeline-header h3 {
+  font-size: 1.8rem;
+	margin-bottom: 0;
+}
+#resume .timeline-header p {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	color: #888888;
+}
+#resume .timeline-content {
+	margin-left: 35%;
+	padding-left: 90px;
+}
+#resume .timeline-content h4 {
+	position: relative;
+	padding-bottom: 1.5rem;
+}
+
+#resume .timeline-content p {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+
+}
+
+#resume .timeline-content h4::after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 50px;
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+.grid-row {
+  margin: 9rem;
+  margin-left: 20rem;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction:row;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+}
+
+
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+#contact {
+  background: #151515;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+}
+
+#contact .section-intro h1 {
+	color: white;
+}
+#contact .section-intro h5 {
+	color: #FF0077;
+}
+#contact .section-intro p {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/* contact form */
+.contact-form {
+	max-width: 740px;
+}
+
+.contact-form ::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+.contact-form :-moz-placeholder {
+	color: rgba(255, 255, 255, 0.3);  /* Firefox 18- */
+}
+.contact-form ::-moz-placeholder {
+	color: rgba(255, 255, 255, 0.3);  /* Firefox 19+ */
+}
+.contact-form :-ms-input-placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+.contact-form .placeholder {
+	color: rgba(255, 255, 255, 0.3) !important;
+}
+
+#contact form {
+	margin-top: 0;
+	margin-bottom: 3rem;
+}
+#contact form .form-field {
+	position: relative;
+}
+#contact form .form-field:before, #contact form .form-field:after {
+	content: "";
+	display: table;
+}
+#contact form .form-field:after {
+	clear: both;
+}
+#contact form .form-field label {
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	line-height: 2.4rem;
+	position: absolute;
+	bottom: -1.2rem;
+	right: .6rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	padding: 0 2rem;
+	margin: 0;
+	color: #FFFFFF;
+	background: #FF0077;
+}
+#contact form .form-field label::after {
+	position: absolute;
+	left: -5px;
+	top: 50%;
+	margin-top: -6px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #FF0077;
+	content: "";
+}
+
+fieldset {
+	border: none;
+}
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+	display: block;
+	height: 6rem;
+	padding: 1.5rem 0;
+	border: 0;
+	outline: none;
+	color: #313131;
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	max-width: 100%;
+	background: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  
+}
+
+
+#contact input[type="text"],
+#contact input[type="password"],
+#contact input[type="email"],
+#contact textarea {
+	width: 100%;
+	color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 0;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#contact input[type="text"],
+#contact input[type="password"],
+#contact input[type="email"] {
+	height: 6.6rem;
+	padding: 1rem 2rem;
+}
+#contact input[type="text"]:focus,
+#contact input[type="password"]:focus,
+#contact input[type="email"]:focus {
+	border-color: #FF0077;
+	color: #FFFFFF;
+}
+#contact textarea {
+	min-height: 5rem;
+	padding: 1.8rem 2rem;
+}
+#contact textarea:focus {
+	border-color: #FF0077;
+	color: #FFFFFF;
+}
+#contact button.submitform {
+	font-size: 1.5rem;
+	display: block;
+	letter-spacing: .2rem;
+	height: 6.6rem;
+	line-height: 6.6rem;
+	padding: 0 3rem;
+	margin-top: 4.8rem;
+	width: 100%;
+	background: #FF0077;
+	color: #FFFFFF;
+}
+#contact button.submitform:hover, #contact button.submitform:focus {
+	background: #cc005f;
+}
+
+.contact-info {
+  display: flex;
+  padding: 0 4px;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.col-four {
+	width: 33.33333%;
+}
+
+.contact-info h5 {
+	color: #FF0077;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width:1024px) {
+	.row .row {
+		margin-left: -18px;
+		margin-right: -18px;
+	}
+
+
+}
+
+
