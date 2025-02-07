@@ -90,15 +90,12 @@ div {
     opacity: 0.7;
 }
 .fa-youtube {
-  background: #444040;
   color: white;
 }
 .fa-instagram {
-  background: #444040;
   color: white;
 }
 .fa-snapchat-ghost {
-  background: #444040;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -482,20 +479,20 @@ div {
 
 
 .grid-row {
-  margin: 9rem;
-  margin-left: 20rem;
-  display: -ms-flexbox; /* IE10 */
+  margin: 20rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  margin-left: 10rem;
+  margin-right: 10rem; /* IE10 */
   display: flex;
   flex-direction:row;
-  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
-  max-width: 25%;
+  max-width: 75%;
 }
 
 
@@ -504,9 +501,6 @@ div {
   vertical-align: middle;
   width: 100%;
 }
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 #contact {
   background: #151515;
@@ -644,6 +638,7 @@ select {
 	color: #FFFFFF;
 }
 #contact button.submitform {
+  font-family: sans-serif;
 	font-size: 1.5rem;
 	display: block;
 	letter-spacing: .2rem;
@@ -654,6 +649,7 @@ select {
 	width: 100%;
 	background: #FF0077;
 	color: #FFFFFF;
+  text-transform: uppercase;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
 	background: #cc005f;
@@ -669,6 +665,18 @@ select {
 
 .col-four {
 	width: 33.33333%;
+}
+
+.services-list .icon {
+	display: inline-block;
+	margin-bottom: 2.1rem;
+}
+
+.contact-info .icon i {
+  display: inline-block;
+  margin-bottom: 2rem;
+	font-size: 1.2rem;
+	color: #FFFFFF;
 }
 
 .contact-info h5 {
