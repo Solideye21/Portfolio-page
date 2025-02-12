@@ -887,8 +887,7 @@ footer .copyright span:last-child::after {
 
 @media only screen and (max-width:768px) {
 	.section-intro {
-		width: 100%;
-		max-width: 750px;
+		max-width: 650px;
 	}
 	.section-intro h1 {
 		font-size: 3rem;
